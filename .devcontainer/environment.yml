@@ -1,0 +1,29 @@
+name: rnaseq
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # RNA-seq alignment tools
+  - star=2.7.*
+  - samtools=1.19.*
+  - bcftools=1.19.*
+
+  # General utilities
+  - wget
+  - curl
+  - gzip
+  - pigz
+
+  # Python environment for analysis
+  - python=3.11.*
+  - jupyter
+  - jupyterlab
+  - matplotlib
+  - pandas
+  - numpy
+  - seaborn
+
+  # Optional: quality control tools
+  - fastqc
+  - multiqc
