@@ -20,15 +20,11 @@ Once your Codespace is ready, verify the tools are installed:
 
 ```bash
 # Check STAR version
-star --version
+STAR --version
 
 # Check samtools version
 samtools --version
 
 # Check bcftools version
 bcftools --version
-
-# Check Python environment
-python --version
-python -c "import pandas, matplotlib; print('Python packages OK')"
 ```

@@ -26,9 +26,11 @@
 
         "workbench.startupEditor": "none",
         "workbench.activityBar.visible": false,
-        "workbench.sideBar.location": "right",
         "workbench.editor.showTabs": "single",
-        "breadcrumbs.enabled": false
+        "breadcrumbs.enabled": false,
+        "terminal.integrated.suggest.enabled": false,
+        "terminal.integrated.suggest.quickSuggestions": false
+
       }
     }
   },
@@ -36,8 +38,6 @@
   "features": {},
 
   "forwardPorts": [8888],
-
-  "postAttachCommand": "echo 'Welcome to the RNAseq Alignment Tutorial!' && bash",
 
   "remoteUser": "root"
 }
