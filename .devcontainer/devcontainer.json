@@ -26,11 +26,20 @@
 
         "workbench.startupEditor": "none",
         "workbench.activityBar.visible": false,
+        "workbench.sideBar.visible": false,
+        "workbench.statusBar.visible": true,
+        "workbench.panel.defaultLocation": "bottom",
         "workbench.editor.showTabs": "single",
         "breadcrumbs.enabled": false,
-        "terminal.integrated.suggest.enabled": false,
-        "terminal.integrated.suggest.quickSuggestions": false
 
+        "terminal.integrated.suggest.enabled": false,
+        "terminal.integrated.suggest.quickSuggestions": false,
+        "terminal.integrated.commandsToSkipShell": [],
+        "terminal.integrated.shellIntegration.suggestEnabled": false,
+
+        "editor.minimap.enabled": false,
+        "workbench.tips.enabled": false,
+        "update.showReleaseNotes": false
       }
     }
   },
