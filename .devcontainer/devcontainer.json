@@ -1,8 +1,11 @@
 {
   "name": "RNAseq Alignment Tutorial",
-  "image": "condaforge/mambaforge:latest",
+  "image": "ghcr.io/biermanr/rnaseq_alignment_and_mpileup_codespaces_tutorial:latest",
 
-  "postCreateCommand": "mamba env create -f .devcontainer/environment.yml && echo 'conda activate rnaseq' >> ~/.bashrc",
+  "build": {
+    "context": ".",
+    "dockerfile": "Dockerfile"
+  },
 
   "customizations": {
     "vscode": {
@@ -19,7 +22,13 @@
             "path": "/bin/bash",
             "args": ["-l"]
           }
-        }
+        },
+
+        "workbench.startupEditor": "none",
+        "workbench.activityBar.visible": false,
+        "workbench.sideBar.location": "right",
+        "workbench.editor.showTabs": "single",
+        "breadcrumbs.enabled": false
       }
     }
   },
@@ -27,6 +36,8 @@
   "features": {},
 
   "forwardPorts": [8888],
+
+  "postAttachCommand": "echo 'Welcome to the RNAseq Alignment Tutorial!' && bash",
 
   "remoteUser": "root"
 }
