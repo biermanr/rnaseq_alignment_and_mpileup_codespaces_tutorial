@@ -23,8 +23,18 @@ Once your Codespace is ready, verify the tools are installed:
 STAR --version
 
 # Check samtools version
-samtools --version
+samtools --help
 
 # Check bcftools version
-bcftools --version
+bcftools --help
+```
+
+### Download an example .vcf.gz and inspect it
+
+```bash
+# Download a vcf.gz file
+wget https://tigress-web.princeton.edu/AKEY/ibdmix_tests/cell_data/mod_chr20.vcf.gz
+
+# Look at the first 10 header lines of the file
+bcftools view mod_chr20.vcf.gz | head
 ```
